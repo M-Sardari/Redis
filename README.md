@@ -24,7 +24,7 @@
 
 ## Description
 
-Simple instance of Redis by Docke compose.
+Simple instance of Redis by Docker compose.
 
 Run docker-compose first, then run the program.
 
