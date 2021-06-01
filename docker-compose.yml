@@ -1,0 +1,44 @@
+version: "3.1"
+
+services:
+  redis:
+    container_name: redis-sample
+    image: redis
+    ports:
+      - 6379:6379
+    environment:
+      REDIS_PASSWORD: sardar
+      SET_CONTAINER_TIMEZONE: 'true'
+      CONTAINER_TIMEZONE: Asia/Tehran
+      TZ: Asia/Tehran
+    volumes:
+      - redis:/data
+    command: --requirepass sardar
+    networks:
+      - test-network
+
+  rediscommander:
+    container_name: rediscommander-sample
+    image: rediscommander/redis-commander
+    ports:
+      - 83:8081
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: sardar
+      REDIS_DB: 0
+      SET_CONTAINER_TIMEZONE: 'true'
+      CONTAINER_TIMEZONE: Asia/Tehran
+      TZ: Asia/Tehran
+    depends_on:
+      - redis
+    networks:
+      - test-network
+
+networks:
+  test-network:
+    driver: bridge
+volumes:
+    redis:
+        driver: local
+        
