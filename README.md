@@ -24,12 +24,19 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Simple instance of Redis by Docke compose.
+Run docker-compose first, then run the program.
 
 ## Installation
 
 ```bash
 $ npm install
+```
+
+## Runing Docker-Compose
+
+```bash
+$ docker-compose up -d
 ```
 
 ## Running the app
@@ -43,3 +50,8 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+
+## license
+
+Author: Mohammad Sardari
