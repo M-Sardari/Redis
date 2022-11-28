@@ -1,8 +1,6 @@
 ## Description
 
-Simple instance of Redis by Docker compose.
-
-Run docker-compose first, then run the program.
+Simple instance of Redis.
 
 ## Usage
 
@@ -16,7 +14,7 @@ wait for the installation to finish.
 
 ### Step 2: Module initialization
 
-you've added below code in your root module:
+You've added below code in your root module:
 ```ts
 @Module({
     imports: [
@@ -43,7 +41,7 @@ The username and password are optional.
 
 ### Step 3: Use in Services
 
-you've to inject RedisClient in your service and use redis methods like below:
+You've to inject RedisClient in your service and use redis methods like below:
 ```ts
 export class AppService{
     constructor(@Inject(REDIS) private redis: RedisClient) {
@@ -61,8 +59,11 @@ export class AppService{
 Import RedisClinet and REDIS from the gadin-redis 
 ``
 
+## Author
+[Mohammad Sardari](mailto:m.sardari@live.com)
+
 ## License
 
 [MIT License](./LICENCE)
 
-Author: Mohammad Sardari
+
