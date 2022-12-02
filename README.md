@@ -1,8 +1,8 @@
 ## Description
 
-Simple instance of Redis by Docker compose.
+Redis is an open source, in-memory data structure store used as a database, cache, message broker, and streaming engine.
 
-Run docker-compose first, then run the program.
+You can to use gadin-redis package easily and setup it.
 
 ## Usage
 
