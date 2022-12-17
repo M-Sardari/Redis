@@ -1,6 +1,6 @@
 {
   "name": "gadin-redis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A module for quick setup and convenient use of Redis in nestjs.",
   "main": "dist/index.js",
   "scripts": {
